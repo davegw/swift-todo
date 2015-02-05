@@ -10,6 +10,8 @@ import UIKit
 
 class ToDoListTableViewController: UITableViewController {
 
+    var toDoItems: [ToDoItem] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
