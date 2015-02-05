@@ -12,9 +12,18 @@ class ToDoListTableViewController: UITableViewController {
 
     var toDoItems: [ToDoItem] = []
     
+    func loadInitialData() {
+        toDoItems = [
+            ToDoItem(itemName: "Buy Milk"),
+            ToDoItem(itemName: "Buy Eggs"),
+            ToDoItem(itemName: "Read a book")
+        ]
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.loadInitialData()
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
