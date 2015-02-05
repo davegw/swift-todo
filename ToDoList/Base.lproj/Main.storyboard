@@ -80,7 +80,9 @@
                             <outlet property="delegate" destination="d1n-T3-6pP" id="XkI-oC-OfI"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="To-Do-List" id="xFZ-eS-BY4"/>
+                    <navigationItem key="navigationItem" title="To-Do-List" id="xFZ-eS-BY4">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="LM2-Ix-0pE"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CRQ-Qb-gE8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
