@@ -92,7 +92,7 @@
             </objects>
             <point key="canvasLocation" x="318" y="269"/>
         </scene>
-        <!--View Controller-->
+        <!--Add To-Do Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ToDoList" customModuleProvider="target" sceneMemberID="viewController">
@@ -118,7 +118,7 @@
                             <constraint firstAttribute="centerY" secondItem="OPb-S5-064" secondAttribute="centerY" id="y7J-pN-Yxr"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="KDs-q0-NZH"/>
+                    <navigationItem key="navigationItem" title="Add To-Do Item" id="KDs-q0-NZH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
