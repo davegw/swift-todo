@@ -9,6 +9,9 @@
 import UIKit
 
 class AddToDoItemViewController: UIViewController {
+    @IBOutlet weak var textField: UITextField!
+
+    @IBOutlet weak var saveButton: UIBarButtonItem!
     
     var toDoItem: ToDoItem = ToDoItem(itemName: "")
 
