@@ -118,7 +118,10 @@
                             <constraint firstAttribute="centerY" secondItem="OPb-S5-064" secondAttribute="centerY" id="y7J-pN-Yxr"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Add To-Do Item" id="KDs-q0-NZH"/>
+                    <navigationItem key="navigationItem" title="Add To-Do Item" id="KDs-q0-NZH">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="JTS-QO-A5u"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="hzh-15-54Z"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
