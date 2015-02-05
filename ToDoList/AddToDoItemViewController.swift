@@ -9,6 +9,8 @@
 import UIKit
 
 class AddToDoItemViewController: UIViewController {
+    
+    var toDoItem: ToDoItem = ToDoItem(itemName: "")
 
     override func viewDidLoad() {
         super.viewDidLoad()
