@@ -52,15 +52,16 @@ class ToDoListTableViewController: UITableViewController {
         println("unwinding")
     }
 
-    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
+        let tempCell = tableView.dequeueReusableCellWithIdentifier("ListPrototypeCell", forIndexPath: indexPath) as UITableViewCell
 
         // Configure the cell...
+        let toDoItem = self.toDoItems[indexPath.row]
+        let cell = tempCell.textLabel as UILabel!
+        cell.text = toDoItem.itemName
 
-        return cell
+        return tempCell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
