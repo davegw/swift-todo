@@ -50,6 +50,14 @@ class ToDoListTableViewController: UITableViewController {
     
     @IBAction func unwindToList(segue: UIStoryboardSegue) {
         println("unwinding")
+        
+        let source = segue.sourceViewController as AddToDoItemViewController
+        let item = source.toDoItem as ToDoItem
+        
+        if item.itemName != "" {
+            self.toDoItems.append(item)
+            self.tableView.reloadData()
+        }
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
