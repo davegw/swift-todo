@@ -107,5 +107,13 @@ class ToDoListTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: false)
+        
+        var tappedItem: ToDoItem = toDoItems[indexPath.row]
+        tappedItem.completed = !tappedItem.completed
+        tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.None)
+    }
 
 }
