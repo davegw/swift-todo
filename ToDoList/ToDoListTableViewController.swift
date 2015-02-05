@@ -59,6 +59,13 @@ class ToDoListTableViewController: UITableViewController {
         let toDoItem = self.toDoItems[indexPath.row]
         let cell = tempCell.textLabel as UILabel!
         cell.text = toDoItem.itemName
+        
+        if (toDoItem.completed) {
+            tempCell.accessoryType = UITableViewCellAccessoryType.Checkmark
+        }
+        else {
+            tempCell.accessoryType = UITableViewCellAccessoryType.None
+        }
 
         return tempCell
     }
